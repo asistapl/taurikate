@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import '../styles'
 
 import Header from '../components/header'
 
@@ -17,10 +18,6 @@ const Layout = ({ children, data }) => (
         href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito:300,400,600,700,800"
         rel="stylesheet"
       />
-      {/*
-        font-family: 'Amatic SC', cursive;
-        font-family: 'Nunito', sans-serif;
-      */}
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
     {children()}

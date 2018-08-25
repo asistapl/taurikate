@@ -1,10 +1,12 @@
 module.exports = {
+  pathPrefix: '/taurikate',
   siteMetadata: {
     title: 'TauriKate',
   },
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-emotion',
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
