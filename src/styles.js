@@ -4,19 +4,23 @@ injectGlobal({
   body: {
     margin: 0,
     fontFamily: "'Nunito', sans-serif",
+    paddingBottom: 100,
   },
   a: {
     textDecoration: 'none',
     color: 'inherit',
   },
-  'h1, h2, h3, h4, h5, h6': {
+  'h1, h2, h3, h4, h5, h6, p': {
     margin: 0,
+  },
+  img: {
+    maxWidth: '100%',
   },
 })
 
 export const fancyFont = {
   fontWeight: 'normal',
-  fontFamily: "'Amatic SC', cursive",
+  fontFamily: "'Amatic SC', sans-serif",
 }
 
 export const em = (val, base = 16) =>
