@@ -6,6 +6,8 @@ import { min } from '../styles'
 import { HeaderTitle, NavLink } from '../typography'
 import Container from '../components/Container'
 
+import favicon from '../favicon.png'
+
 const Header = () => (
   <header
     css={{
@@ -57,6 +59,7 @@ const Layout = ({ children, data }) => (
         href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito:300,400,600,700,800"
         rel="stylesheet"
       />
+      <link rel="icon" href={favicon} />
     </Helmet>
     <Header />
     <Container>{children()}</Container>
