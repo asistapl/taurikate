@@ -9,6 +9,8 @@
       "type": "image/png"
     }
   ],
+  "display": "standalone",
+  "orientation": "natural",
   "start_url": "/?addToHome=1",
   "background_color": "#FDE5E5",
   "theme-color": "#FFD6D6"
