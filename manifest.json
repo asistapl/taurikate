@@ -1,10 +1,11 @@
 {
   "name": "Kasia Marcinkiewicz",
   "short_name": "Kasia M",
+  "description": "Kasia Marcinkiewicz is a Polish freelance artist who specializes in cute illustrations.",
   "icons": [
     {
       "src": "favicon.png",
-      "sizes": "128x128",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
