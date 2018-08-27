@@ -58,8 +58,8 @@ const Layout = ({ children, data }) => (
         href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito:300,400,600,700,800"
         rel="stylesheet"
       />
-      <link rel="manifest" href={withPrefix('manifest.json')} />
-      <link rel="icon" href={withPrefix('favicon.png')} />
+      <link rel="manifest" href={withPrefix('/manifest.json')} />
+      <link rel="icon" href={withPrefix('/favicon.png')} />
     </Helmet>
     <Header />
     <Container>{children()}</Container>
