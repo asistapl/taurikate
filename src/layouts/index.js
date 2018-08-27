@@ -51,6 +51,7 @@ const Header = () => (
 const Layout = ({ children, data }) => (
   <Fragment>
     <Helmet>
+      <html lang="en" />
       <title>{data.site.siteMetadata.title}</title>
       <meta name="description" content={data.site.siteMetadata.description} />
       <meta name="theme-color" content="#FFD6D6" />
