@@ -1,0 +1,14 @@
+{
+  "name": "Kasia Marcinkiewicz",
+  "short_name": "Kasia M",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?addToHome=1",
+  "background_color": "#FDE5E5",
+  "theme-color": "#FFD6D6"
+}

@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import Link, { withPrefix } from 'gatsby-link'
 import { min } from '../styles'
 import { HeaderTitle, NavLink } from '../typography'
 import Container from '../components/Container'
-
-import favicon from '../favicon.png'
 
 const Header = () => (
   <header
@@ -55,11 +53,13 @@ const Layout = ({ children, data }) => (
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
       <meta name="description" content={data.site.siteMetadata.description} />
+      <meta name="theme-color" content="#FFD6D6" />
       <link
         href="https://fonts.googleapis.com/css?family=Amatic+SC|Nunito:300,400,600,700,800"
         rel="stylesheet"
       />
-      <link rel="icon" href={favicon} />
+      <link rel="manifest" href={withPrefix('manifest.json')} />
+      <link rel="icon" href={withPrefix('favicon.png')} />
     </Helmet>
     <Header />
     <Container>{children()}</Container>
