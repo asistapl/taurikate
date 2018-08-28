@@ -7,24 +7,27 @@ export const NavLink = styled(Link)({
   zIndex: 0,
   fontSize: 30,
   ...fancyFont,
-  '::after': {
-    content: '""',
-    display: 'block',
-    width: 'calc(100% + 14px)',
-    height: '50%',
-    position: 'absolute',
-    zIndex: -1,
-    top: '50%',
-    left: '-7px',
-    backgroundColor: '#FFD6D6',
-    borderRadius: 100,
-    opacity: 0,
-    transition: '.5s',
-    pointerEvents: 'none',
-    // filter: 'blur(7px)', // there is safari rendering bug so don't use it
+  transitionProperty: 'transform',
+  transitionDuration: '.2s',
+  ':hover:not(.active)': {
+    transform: 'translateY(-1px)',
   },
-  '&:hover::after, &.active::after': {
-    opacity: 1,
+})
+
+NavLink.Scratch = styled('svg')({
+  fill: 'none',
+  position: 'absolute',
+  zIndex: -1,
+  top: 0,
+  left: 0,
+  path: {
+    transition: 'stroke-dashoffset .9s ease-in-out',
+  },
+  // '*:hover > & > path': {
+  //   strokeDashoffset: 350,
+  // },
+  '*.active > & > path': {
+    strokeDashoffset: 0,
   },
 })
 
