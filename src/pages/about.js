@@ -1,6 +1,7 @@
 import React from 'react'
 import { PageTitle, Paragraph } from '../typography'
 import { min, media } from '../styles'
+import Img from '../components/Img'
 import portrait from '../portrait.jpg'
 
 export default () => (
@@ -9,16 +10,17 @@ export default () => (
       [media.tabletMd]: {
         display: 'flex',
         alignItems: 'flex-start',
-        marginTop: 60,
       },
     }}
   >
-    <img
+    <Img
       src={portrait}
       alt="Kasia Marcinkiewicz"
+      ratio={2599 / 2072}
+      color="#fde9ea"
       css={{
         width: '100%',
-        borderRadius: 8,
+        '&, img': { borderRadius: 8 },
         [media.tabletMd]: { width: '40%' },
       }}
     />

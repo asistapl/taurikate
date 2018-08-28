@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link, { withPrefix } from 'gatsby-link'
-import { min } from '../styles'
+import { min, media } from '../styles'
 import { HeaderTitle, NavLink } from '../typography'
 import Container from '../components/Container'
 
@@ -111,7 +111,15 @@ const Layout = ({ children, data }) => (
       <link rel="icon" href={withPrefix('/favicon.png')} />
     </Helmet>
     <Header />
-    <Container>{children()}</Container>
+    <Container
+      css={{
+        [media.tabletMd]: {
+          marginTop: 60,
+        },
+      }}
+    >
+      {children()}
+    </Container>
   </Fragment>
 )
 
