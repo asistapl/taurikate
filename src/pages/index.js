@@ -6,64 +6,76 @@ import { supportsHover } from '../styles'
 
 const thumbnails = [
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Lady',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb01.jpg',
+    src: 'thumb10.png',
   },
   {
-    title: 'Lama',
+    title: 'Bird',
     desc: 'watercolor & ink',
     alt: '',
-    src: 'thumb02.jpg',
+    src: 'thumb1.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Lady',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb03.jpg',
+    src: 'thumb11.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Rabbit',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb04.jpg',
+    src: 'thumb2.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Guinea Pig',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb05.jpg',
+    src: 'thumb5.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Conrad Corgi',
+    desc: 'colored pencils & ink',
     alt: '',
-    src: 'thumb06.jpg',
+    src: 'thumb9.png',
   },
   {
-    title: 'Lama',
+    title: 'Llama',
     desc: 'watercolor & ink',
     alt: '',
-    src: 'thumb07.jpg',
+    src: 'thumb6.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Lady',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb08.jpg',
+    src: 'thumb4.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Reading Cat',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb09.jpg',
+    src: 'thumb8.png',
   },
   {
-    title: 'Lama',
-    desc: 'watercolor & ink',
+    title: 'Lady',
+    desc: 'watercolor',
     alt: '',
-    src: 'thumb10.jpg',
+    src: 'thumb7.png',
+  },
+  {
+    title: 'Lady',
+    desc: 'watercolor & acrylic',
+    alt: '',
+    src: 'thumb3.png',
+  },
+  {
+    title: 'Fat Boy',
+    desc: 'digital',
+    alt: '',
+    src: 'thumb12.jpg',
   },
 ]
 
@@ -76,7 +88,7 @@ const Thumbnail = ({
   <figure
     css={{
       position: 'relative',
-      backgroundColor: '#FFD6D6',
+      // backgroundColor: '#FFD6D6',
     }}
   >
     <Img
@@ -84,10 +96,12 @@ const Thumbnail = ({
       alt={alt || `${title} - ${desc}`}
       ratio={1}
       css={{
-        transition: 'filter .6s',
+        transition: '.6s',
         [supportsHover]: {
           '*:hover > &': {
-            filter: 'contrast(1.6) grayscale(1)',
+            filter: 'contrast(1.3) grayscale(1)',
+            opacity: 0.2,
+            // mixBlendMode: 'screen',
           },
         },
       }}
@@ -114,24 +128,27 @@ const Thumbnail = ({
             opacity: 1,
           },
         },
-        '::before': {
-          content: '""',
-          display: 'block',
-          width: '100%',
-          height: '100%',
-          position: 'absolute',
-          zIndex: -1,
-          top: 0,
-          left: 0,
-          backgroundColor: '#FFC5C5',
-          opacity: 0.85,
-        },
+        // '::before': {
+        //   content: '""',
+        //   display: 'block',
+        //   width: '100%',
+        //   height: '100%',
+        //   position: 'absolute',
+        //   zIndex: -1,
+        //   top: 0,
+        //   left: 0,
+        //   backgroundColor: '#FFC5C5',
+        //   opacity: 0.85,
+        // },
       }}
     >
       <div
         css={{
+          marginBottom: 10,
           fontWeight: 800,
           fontSize: 36,
+          lineHeight: 1.1,
+          textAlign: 'center',
           opacity: 0.7,
         }}
       >
@@ -141,6 +158,7 @@ const Thumbnail = ({
         css={{
           fontWeight: 500,
           fontSize: 18,
+          textAlign: 'center',
           opacity: 0.7,
         }}
       >
@@ -162,11 +180,7 @@ const IndexPage = () => (
     }}
   >
     {thumbnails.map((thumb, i) => (
-      <Thumbnail
-        key={i}
-        {...thumb}
-        src={withPrefix(`/thumbnails/${thumb.src}`)}
-      />
+      <Thumbnail key={i} {...thumb} src={withPrefix(`/thumbs/${thumb.src}`)} />
     ))}
   </div>
 )
