@@ -60,3 +60,5 @@ export const media = Object.entries(breakpoints).reduce((acc, [key, val]) => {
 export const min = width => `@media (min-width: ${em(width)})`
 
 export const max = width => `@media (max-width: ${em(width)})`
+
+export const supportsHover = `@media (hover: hover)`

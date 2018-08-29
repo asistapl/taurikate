@@ -2,6 +2,7 @@ import React from 'react'
 import { media } from '../styles'
 import { withPrefix } from 'gatsby-link'
 import Img from '../components/Img'
+import { supportsHover } from '../styles'
 
 const thumbnails = [
   {
@@ -84,8 +85,10 @@ const Thumbnail = ({
       ratio={1}
       css={{
         transition: 'filter .6s',
-        '*:hover > &': {
-          filter: 'contrast(1.6) grayscale(1)',
+        [supportsHover]: {
+          '*:hover > &': {
+            filter: 'contrast(1.6) grayscale(1)',
+          },
         },
       }}
     />
@@ -105,9 +108,11 @@ const Thumbnail = ({
         opacity: 0,
         transitionProperty: 'visibility, opacity',
         transitionDuration: '.6s',
-        '*:hover > &': {
-          visibility: 'visible',
-          opacity: 1,
+        [supportsHover]: {
+          '*:hover > &': {
+            visibility: 'visible',
+            opacity: 1,
+          },
         },
         '::before': {
           content: '""',

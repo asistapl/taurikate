@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 import Link from 'gatsby-link'
-import { fancyFont, min, media } from './styles'
+import { fancyFont, min, supportsHover } from './styles'
 
 export const NavLink = styled(Link)({
   position: 'relative',
@@ -9,8 +9,10 @@ export const NavLink = styled(Link)({
   ...fancyFont,
   transitionProperty: 'transform',
   transitionDuration: '.2s',
-  ':hover:not(.active)': {
-    transform: 'translateY(-1px)',
+  [supportsHover]: {
+    ':hover:not(.active)': {
+      transform: 'translateY(-1px)',
+    },
   },
 })
 
@@ -23,9 +25,6 @@ NavLink.Scratch = styled('svg')({
   path: {
     transition: 'stroke-dashoffset .9s ease-in-out',
   },
-  // '*:hover > & > path': {
-  //   strokeDashoffset: 350,
-  // },
   '*.active > & > path': {
     strokeDashoffset: 0,
   },
