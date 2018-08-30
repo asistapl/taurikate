@@ -62,3 +62,9 @@ export const min = width => `@media (min-width: ${em(width)})`
 export const max = width => `@media (max-width: ${em(width)})`
 
 export const supportsHover = `@media (hover: hover)`
+
+export const isRetina = () =>
+  matchMedia('(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)')
+    .matches
+
+export const isTouchDevice = () => matchMedia('(hover: none)').matches
