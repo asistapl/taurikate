@@ -12,10 +12,10 @@ import 'photoswipe/dist/default-skin/default-skin.css'
 
 injectGlobal({
   '.pswp__bg': {
-    background: '#fff',
+    background: '#fff !important',
   },
   '.pswp__top-bar, .pswp__caption, .pswp__button--arrow--left:before, .pswp__button--arrow--right:before': {
-    backgroundColor: '#ffd6d6',
+    backgroundColor: '#ffd6d6 !important',
   },
 })
 
