@@ -63,6 +63,8 @@ export const max = width => `@media (max-width: ${em(width)})`
 
 export const supportsHover = `@media (hover: hover)`
 
+export const supportsGrid = `@supports(grid-area: auto)`
+
 export const isRetina = () => {
   if (typeof window !== 'undefined') {
     return window.matchMedia(
