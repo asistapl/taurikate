@@ -1,2 +1,2 @@
-webpackJsonp([60335399758886],{82:function(i,t){i.exports={data:{site:{siteMetadata:{title:"Kasia Marcinkiewicz – Portfolio",description:"Kasia Marcinkiewicz is a Polish freelance artist who specializes in cute illustrations."}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{83:function(i,t){i.exports={data:{site:{siteMetadata:{title:"Kasia Marcinkiewicz – Portfolio",description:"Kasia Marcinkiewicz is a Polish freelance artist who specializes in cute illustrations."}}},layoutContext:{}}}});
 //# sourceMappingURL=path----4bfc193811ba3d685b4b.js.map
