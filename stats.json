@@ -1,20 +1,20 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-b6950f264de88a52c3fe.js",
-      "component---src-pages-index-js-b6950f264de88a52c3fe.js.map"
+      "component---src-pages-index-js-2471effba514fb68a301.js",
+      "component---src-pages-index-js-2471effba514fb68a301.js.map"
     ],
     "path---": [
       "path----4bfc193811ba3d685b4b.js",
       "path----4bfc193811ba3d685b4b.js.map"
     ],
     "component---src-pages-contact-js": [
-      "component---src-pages-contact-js-458c00bc56c9c8ebf6ad.js",
-      "component---src-pages-contact-js-458c00bc56c9c8ebf6ad.js.map"
+      "component---src-pages-contact-js-209896a3632088c1ac9c.js",
+      "component---src-pages-contact-js-209896a3632088c1ac9c.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e7f676154bd51be81b0f.js",
-      "component---src-layouts-index-js-e7f676154bd51be81b0f.js.map"
+      "component---src-layouts-index-js-644ba08d865396980134.js",
+      "component---src-layouts-index-js-644ba08d865396980134.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -25,9 +25,9 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-5cbd39098047aa58c842.js",
+      "commons-a31612a86dd25efa4140.js",
       "build-js-styles.css",
-      "commons-5cbd39098047aa58c842.js.map",
+      "commons-a31612a86dd25efa4140.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -39,9 +39,9 @@
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-1956f718845dcafc1a40.js",
+      "app-15a21ec5d97bfd6387fe.js",
       "build-js-styles.css",
-      "app-1956f718845dcafc1a40.js.map",
+      "app-15a21ec5d97bfd6387fe.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -49,8 +49,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-901b31d7ba40a2dd4959.js",
-      "component---src-pages-about-js-901b31d7ba40a2dd4959.js.map"
+      "component---src-pages-about-js-fa6a1e42dcbd730c2a08.js",
+      "component---src-pages-about-js-fa6a1e42dcbd730c2a08.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
