@@ -7,16 +7,21 @@ import { media } from '../styles'
 
 const Icon = styled.svg(({ width }) => ({
   display: 'block',
-  width: 75,
-  height: 75,
-  marginBottom: 15,
-  [media.tabletLg]: { marginBottom: 25 },
+  width: 35,
+  height: 35,
+  marginBottom: 13,
   fill: 'none',
-  strokeWidth: 0.5,
+  strokeWidth: 0.8,
   stroke: '#FFD6D6',
   strokeLinecap: 'round',
   strokeLinejoin: 'round',
-  transition: '1s ease-out',
+  transition: 'stroke 1s ease-out',
+  [media.laptop]: {
+    width: 75,
+    height: 75,
+    marginBottom: 25,
+    strokeWidth: 0.5,
+  },
   '.HoverContactItem:hover &': {
     stroke: 'transparent',
   },
@@ -25,7 +30,7 @@ const Icon = styled.svg(({ width }) => ({
     stroke: 'rgba(0, 0, 0, 1)',
     strokeDasharray: width,
     strokeDashoffset: width,
-    transition: `${width * 0.015}s ease-in-out`,
+    transition: `stroke-dashoffset ${width * 0.015}s ease-in-out`,
     '.HoverContactItem:hover &': {
       strokeDashoffset: 0,
     },
@@ -35,7 +40,7 @@ const Icon = styled.svg(({ width }) => ({
 const paragraphStyle = {
   maxWidth: '20em',
   marginTop: 10,
-  [media.tabletLg]: {
+  [media.laptop]: {
     marginTop: 25,
   },
 }
@@ -47,7 +52,7 @@ const ContactPage = () => (
       flexDirection: 'column',
       alignItems: 'center',
       '> *': {
-        marginBottom: 40,
+        marginBottom: 30,
       },
       [media.laptop]: {
         flexDirection: 'row',
