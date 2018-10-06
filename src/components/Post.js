@@ -10,7 +10,7 @@ const Post = React.forwardRef(
     <figure
       css={{
         position: 'relative',
-        cursor: 'zoom-in',
+        cursor: ['pointer', 'zoom-in'],
       }}
       {...rest}
       ref={ref}
