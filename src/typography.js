@@ -67,12 +67,3 @@ export const Paragraph = styled('p')({
   lineHeight: 1.6,
   color: '#888',
 })
-
-export const ContactLink = styled('a')({
-  fontWeight: 800,
-  fontSize: 18,
-  lineHeight: 1.6,
-  transition: '.3s',
-  opacity: 0.6,
-  ':hover': { opacity: 1 },
-})
