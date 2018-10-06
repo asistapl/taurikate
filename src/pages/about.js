@@ -1,10 +1,10 @@
 import React from 'react'
 import { PageTitle, Paragraph } from '../typography'
-import { min, media } from '../styles'
+import { media } from '../styles'
 import Img from '../components/Img'
 import portrait from '../portrait.jpg'
 
-export default () => (
+const AboutPage = () => (
   <div
     css={{
       [media.tabletMd]: {
@@ -67,3 +67,5 @@ export default () => (
     </div>
   </div>
 )
+
+export default AboutPage

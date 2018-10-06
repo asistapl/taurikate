@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Img from './Img'
+import { PostTitle, PostDesc } from '../typography'
 
 import { supportsHover } from '../styles'
 
@@ -52,28 +53,8 @@ const Post = React.forwardRef(
           },
         }}
       >
-        <div
-          css={{
-            marginBottom: 7,
-            fontWeight: 800,
-            fontSize: 36,
-            lineHeight: 1.1,
-            textAlign: 'center',
-            opacity: 0.7,
-          }}
-        >
-          {title}
-        </div>
-        <div
-          css={{
-            fontWeight: 500,
-            fontSize: 18,
-            textAlign: 'center',
-            opacity: 0.7,
-          }}
-        >
-          {desc}
-        </div>
+        <PostTitle css={{ marginBottom: 7 }}>{title}</PostTitle>
+        <PostDesc>{desc}</PostDesc>
       </figcaption>
     </figure>
   )

@@ -1,6 +1,6 @@
 import styled from 'react-emotion'
 import Link from 'gatsby-link'
-import { fancyFont, min, supportsHover } from './styles'
+import { media, fancyFont, min, supportsHover } from './styles'
 
 export const NavLink = styled(Link)({
   position: 'relative',
@@ -37,10 +37,28 @@ export const HeaderTitle = styled('h1')({
 })
 
 export const PageTitle = styled('h1')({
-  fontWeight: 700,
-  fontSize: 30,
+  fontWeight: 800,
+  fontSize: 28,
   textAlign: 'center',
-  color: '#666',
+  opacity: 0.6,
+})
+
+export const PostTitle = styled('div')({
+  fontWeight: 800,
+  fontSize: 18,
+  lineHeight: 1.1,
+  textAlign: 'center',
+  opacity: 0.7,
+  [media.tabletMd]: {
+    fontSize: 36,
+  },
+})
+
+export const PostDesc = styled('p')({
+  fontWeight: 500,
+  fontSize: 18,
+  textAlign: 'center',
+  opacity: 0.7,
 })
 
 export const Paragraph = styled('p')({
@@ -48,4 +66,13 @@ export const Paragraph = styled('p')({
   fontSize: 18,
   lineHeight: 1.6,
   color: '#888',
+})
+
+export const ContactLink = styled('a')({
+  fontWeight: 800,
+  fontSize: 18,
+  lineHeight: 1.6,
+  transition: '.3s',
+  opacity: 0.6,
+  ':hover': { opacity: 1 },
 })
