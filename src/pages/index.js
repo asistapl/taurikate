@@ -11,9 +11,9 @@ const IndexPage = () => (
     css={{
       display: 'flex',
       flexWrap: 'wrap',
-      '> *': { width: '33.333%' },
+      '> figure': { width: '33.333%' },
       [supportsGrid]: {
-        '> *': { width: '100%' },
+        '> figure': { width: '100%' },
         display: 'grid',
         gridGap: 20,
         gridTemplateColumns: `repeat(var(--cols, 2), 1fr)`,

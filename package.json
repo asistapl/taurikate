@@ -22,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --host 192.168.1.97",
     "deploy": "gatsby build && gh-pages -d public",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"

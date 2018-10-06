@@ -52,8 +52,8 @@ export const breakpoints = {
   desktopLg: 1920,
 }
 
-export const media = Object.entries(breakpoints).reduce((acc, [key, val]) => {
-  acc[key] = `@media (min-width: ${em(val)})`
+export const media = Object.keys(breakpoints).reduce((acc, key) => {
+  acc[key] = `@media (min-width: ${em(breakpoints[key])})`
   return acc
 }, {})
 
