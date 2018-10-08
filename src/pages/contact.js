@@ -116,8 +116,8 @@ const ContactPage = () => (
         instagram.com/taurikate
       </ContactLink>
       <ContactParagraph>
-        It's where I&nbsp;post most of my artworks a&nbsp;few times a&nbsp;week.
-        Follow me to never miss one!
+        It's where I&nbsp;post most of my artworks from time to time. Follow me
+        to never miss one!
       </ContactParagraph>
     </div>
     <div className="HoverContactItem">
