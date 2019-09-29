@@ -50,7 +50,7 @@ export const ContactLink = styled('a')({
 })
 
 const ContactParagraph = styled('p')({
-  maxWidth: '20em',
+  maxWidth: '25em',
   marginTop: 10,
   fontWeight: 300,
   fontSize: 18,
@@ -82,7 +82,7 @@ const ContactPage = () => (
         '> *': {
           marginBottom: 0,
           padding: '0 30px',
-          flexBasis: '33.333%',
+          flexBasis: '50%',
         },
       },
     }}
@@ -120,7 +120,7 @@ const ContactPage = () => (
         to never miss one!
       </ContactParagraph>
     </div>
-    <div className="HoverContactItem">
+    {/* <div className="HoverContactItem">
       <ContactIcon viewBox="0 0 24 24" width={73}>
         <path d="M12,0.5L12,0.5c0.7,0,1.3,0.2,1.8,0.5l8.8,5.8c0.6,0.4,0.9,1,0.9,1.7v6.9c0,0.7-0.3,1.3-0.9,1.7l-8.8,5.9c-0.5,0.4-1.2,0.6-1.8,0.6l0,0c-0.7,0-1.3-0.2-1.8-0.5l-8.8-5.9c-0.6-0.4-0.9-1-0.9-1.7V8.6c0-0.7,0.3-1.3,0.9-1.7l8.8-5.8C10.7,0.7,11.3,0.5,12,0.5z M10.5,3.5v5l-3,2L3.5,8L10.5,3.5z M13.5,3.5v5l3,2l4-2.5L13.5,3.5z M13.5,20.5v-5l3-2l4,2.5L13.5,20.5z M10.5,20.5v-5l-3-2l-4,2.5L10.5,20.5z M2.5,10.5L5,12l-2.5,1.5V10.5zM21.5,13.5L19,12l2.5-1.5V13.5z M12,10l-3,2l3,2l3-2L12,10z" />
         <path
@@ -135,7 +135,7 @@ const ContactPage = () => (
         You may be interested in some interactive animations for your website.
         Here's my code “sketchbook”.
       </ContactParagraph>
-    </div>
+    </div> */}
   </div>
 )
 

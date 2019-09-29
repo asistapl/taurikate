@@ -44,9 +44,6 @@ const AboutPage = () => (
         cute and I try to express it in my art. I love to share joy so I'd be
         happy to illustrate (especially children's) books or anything related.
       </Paragraph>
-      <Paragraph>
-        I'm also a coder, vector animator and casual Hearthstone player.
-      </Paragraph>
       <div
         css={{
           marginTop: 20,
@@ -59,9 +56,6 @@ const AboutPage = () => (
           Uwielbiam wszystko co urocze, co staram się wyrazić w swojej
           twórczości. Kocham szerzyć radość, więc z przyjemnością zilustruję
           książki (zwłaszcza dziecięce).
-        </Paragraph>
-        <Paragraph>
-          Oprócz tego koduję, animuję wektory i grywam w Hearthstone'a.
         </Paragraph>
       </div>
     </div>
